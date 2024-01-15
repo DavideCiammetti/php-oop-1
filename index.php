@@ -5,8 +5,8 @@ class Movie {
     public $genere ;
     public $durata;
 
-    function __construct($genere){
-        $this->genere = 'genere:'."\t".$genere;
+    function __construct(array $genere){
+        $this->genere = $genere;
     }
 
     public function setDurata($durata){
@@ -19,20 +19,20 @@ class Movie {
 }
 // primo film
 echo 'primo film'.'<br>';
-$movieOne = new Movie('fantasy');
+$movieOne = new Movie(['fantasy', 'adventure']);
 
 echo $movieOne->nome = 'film:'."\t".'lord of the rings'.'<br>';
-echo $movieOne->genere.'<br>';
+var_dump($movieOne->genere);
 echo $movieOne->setDurata(180);
 
 echo '<br>';
 echo '<br>';
 // secondo film
 echo 'secondo film'.'<br>';
-$movieTwo = new Movie('sci-fi');
+$movieTwo = new Movie(['sci-fi', 'action']);
 
 echo $movieTwo->nome = 'film:'."\t".'back to the future'.'<br>';
-echo $movieTwo->genere.'<br>';
+var_dump($movieTwo->genere);
 echo $movieTwo->setDurata(120);
 
 ?>
