@@ -12,13 +12,13 @@
     <h3>film 1</h3>
     <ul>
         <li>
-            <p><?php echo $movieOne->nome ?></p>
+            <p><?php echo $movieOne->nome = 'film:'."\t".'lord of the rings' ?></p>
         </li>
         <li>
            <p> <?php echo $movieOne->setDurata(180); ?></p>
         </li>
         <li>
-            <p><?php var_dump($movieOne->genere); ?></p>
+            <p><?php echo $movieTwo->setGeneri(['action','sci-fi']);?></p>
         </li>
         <li>
             <p><?php echo $movieOne->setAnnoUscita(2000); ?></p>
@@ -27,16 +27,16 @@
     <h3>film 2</h3>
     <ul>
         <li>
-            <?php echo $movieTwo->nome ?>
+            <p><?php echo $movieTwo->nome = 'film:'."\t".'back to the future' ?></p>
         </li>
         <li>
-            <?php echo $movieTwo->setDurata(120); ?>
+            <p><?php echo $movieTwo->setDurata(120); ?></p>
         </li>
         <li>
-            <?php var_dump($movieTwo->genere); ?>
+            <p><?php echo $movieTwo->setGeneri(['action','sci-fi']);?></p>
         </li>
         <li>
-            <?php echo $movieTwo->setAnnoUscita(1985); ?>
+           <p><?php echo $movieTwo->setAnnoUscita(1985); ?></p>
         </li>
     </ul>
 </body>
