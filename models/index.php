@@ -1,3 +1,3 @@
 <?php
-
-include_once __DIR__. '/movies.php';
+    require_once __DIR__. '/main.php';
+?>
